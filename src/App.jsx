@@ -3,7 +3,7 @@ import "./App.css";
 import TodoItem from "./Todoitem";
 
 class App extends Component {
-  constructor(props) {
+  constructor(props) {  
     super(props);
     this.state = {
       inputValue: "",
@@ -19,7 +19,7 @@ class App extends Component {
         {/* 头部 */}
         <div className="head">
           <label htmlFor="aaa">输入内容</label>
-          <input id="aaa" type="text" value={this.state.inputValue} onChange={this.changeHandle.bind(this)} /> <input type="button" onClick={this.submit.bind(this)} value="提交" />
+          <input id="aaa" ref ={(ele)=>this.ele=ele} type="text" value={this.state.inputValue} onChange={this.changeHandle.bind(this)} /> <input type="button" onClick={this.submit.bind(this)} value="提交" />
         </div>
         <div className="box">
           <ul>
