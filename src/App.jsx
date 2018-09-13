@@ -3,7 +3,7 @@ import "./App.css";
 import TodoItem from "./Todoitem";
 import { Input, Button } from "antd";
 
-import store from "./store";
+import store from "./redux-store";
 
 class App extends Component {
   constructor(props) {
