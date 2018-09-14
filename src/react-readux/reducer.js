@@ -13,12 +13,11 @@ export const reducerName = (state = defaultState, action) => {
 
 
 
-
 // <Provider store={store}>
 //     <App />
 // </Provider>
 
-//使用
+
 // const mapStateToProps = () => {
 //     return {
 
